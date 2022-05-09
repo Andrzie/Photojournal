@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class = "container">
+        <div class="profile_page">
+                <h1>{{profile.username}}</h1>
+                <p><img class = "profile_page-img" src ="{{profile.avatar.url}}" alt ="..." class="avatar"></p>
+
+                <p>
+                        <a href =""><button>настройки</button></a>
+                        <a href =""><button>мой блог</button></a>
+                        <a href =""><button>подписчики</button></a>
+
+                </p>
+
+        </div>
+        <div><p>{{p.info}}</p></div>
+
+</div>
+
+{% endblock %}

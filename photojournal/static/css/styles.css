@@ -1,0 +1,81 @@
+
+body{
+    background:  lightgrey;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+header{
+    background-color: white;
+    height: 80px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.container{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+img{width:350px;
+}
+
+.header-elem > a:hover{
+    opacity: 0.4;
+}
+
+
+header> .header-elem{
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+img {
+    border-radius: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a: hover{
+    color: pink;
+}
+
+h1{
+    width: 300px;
+}
+
+.blog{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     border: solid black;
+}
+
+.blog_elems{
+    border: solid black:
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.profile_page {
+    display:  flex;
+
+}
+
+.profile_page-img{
+    border-radius: 50%;
+    width: 25%;
+    margin-left: 30px;
+}

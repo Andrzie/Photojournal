@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ blog }}
+
+    <form action = "{% url 'post_like' blog.id %}" method="POST">
+        {% csrf_token %}
+        {% if post_is_liked %}
+        <button type="submit" name="post_id" value="{{blog.id}}" class="btn btn-info">Dislike</button>
+        {% else %}
+        <button type="submit" name="post_id" value="{{blog.id}}" class="btn btn-info">Like</button>
+    </form>
+
+    {% endif %}
+<strong class="text-secondary">{{ number_of_likes }} Like {{ number_of_likes|pluralize }}</strong>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+

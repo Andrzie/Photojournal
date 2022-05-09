@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div class="blog" >
+{% for blog in blogs %}
+
+    <div class="blog-elems">
+        <a href="{{ blog.get_absolute_url }}">
+            <h1>{{blog.description}}</h1>
+            <p><img src ="{{blog.photo.url}}" alt ="..."></p>
+            <strong class="text-secondary"><i class="fa fa-thumbs-up" aria-hidden="true"></i>{{blog.number_of_likes}}</strong>
+        </a>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}
+
+
+
